@@ -3126,20 +3126,14 @@ abstract class Musical {
 {% endprettify %}
 
 <div class="alert alert-info" markdown="1">
-**Note:**
-As of 1.13, two restrictions on mixins have been lifted
-from the Dart VM:
+  **Note:** Some restrictions on mixins are being removed. For details, see the
+  [proposed mixin specification.][Dart 2.0 Mixins]
 
-* Mixins allow extending from a class other than Object.
-* Mixins can call `super()`.
-
-These "super mixins" are
-[not yet supported in dart2js](https://github.com/dart-lang/sdk/issues/23773)
-and require the `--supermixin` flag in dartanalyzer.
+  [Dart 2.0 Mixins]: https://github.com/dart-lang/sdk/blob/master/docs/language/informal/mixin-declaration.md
 </div>
 
-For more information, see the article [Mixins in
-Dart.](/articles/language/mixins)
+For a theoretical presentation of the evolution of mixins in Dart, see
+[A Brief History of Mixins in Dart](/articles/language/mixins).
 
 
 ### Class variables and methods
@@ -4115,12 +4109,12 @@ To learn more about Dart's core libraries, see
 [A Tour of the Dart Libraries](/guides/libraries/library-tour).
 
 [AssertionError]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-core/AssertionError-class.html
-[dart2js]: {{site.dev-webdev}}/tools/dart2js
+[dart2js]: {{site.webdev}}/tools/dart2js
 [dart:html]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-html
 [dart:isolate]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-isolate
 [dart:math]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-math
 [dart]: /dart-vm/tools/dart-vm
-[dartdevc]: {{site.dev-webdev}}/tools/dartdevc
+[dartdevc]: {{site.webdev}}/tools/dartdevc
 [DON’T use const redundantly]: /guides/language/effective-dart/usage#dont-use-const-redundantly
 [double]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-core/double-class.html
 [Error]: {{site.dart_api}}/{{site.data.pkg-vers.SDK.channel}}/dart-core/Error-class.html
